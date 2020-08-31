@@ -9,11 +9,22 @@ namespace SocialSecurityNumber
     {
         static void Main(string[] args) // Varför är stringen arg?
         {
-            Console.Clear();
-            Console.Write("Please enter your social security number ((YY)YYMMDD-NNNN): ");
-            string socialSecurityNumber = Console.ReadLine();
-            int socialSecurityNumberLength = socialSecurityNumber.Length;
-            Console.WriteLine(socialSecurityNumberLength);
+            string socialSecurityNumber = null;
+            int socialSecurityNumberLength = 0;
+            if (args.Length != 0) // check if there is an argument in the cmd / terminal / whatever you use for this
+            {
+                foreach (Object obj in args)
+                {
+                    socialSecurityNumber = args[0];
+                    socialSecurityNumberLength = socialSecurityNumber.Length;
+                }
+            }
+            else
+            {
+                Console.Write("Please enter your social security number ((YY)YYMMDD-NNNN): ");
+                socialSecurityNumber = Console.ReadLine();
+                socialSecurityNumberLength = socialSecurityNumber.Length;
+            }
             while (socialSecurityNumberLength != 10
                 && socialSecurityNumberLength != 11
                 && socialSecurityNumberLength != 12
@@ -45,13 +56,11 @@ namespace SocialSecurityNumber
                     age--;
                 }
 
-                Console.WriteLine(age);
                 if ((socialSecurityNumberLength == 11 )
                     && socialSecurityNumber.Substring(socialSecurityNumberLength - 5, 1) == "+")
                 {
                     age += 100;
                 }
-                Console.WriteLine(age);
 
                 Console.WriteLine($"This is a {gender}, and {pronoun} age is {age}.");
 
