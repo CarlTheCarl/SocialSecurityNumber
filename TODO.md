@@ -4,6 +4,8 @@
 
 ++ Add error code output for terminal use
 
-++ Add input for first and last name
+++ ~~Add output for which generation the person belongs to~~ Done
 
-++ Add output for which generation the person belongs to
+++ ~~Add input for first and last name~~ Done
+
+++ ~~Add terminal input for help and version checker~~ Done
