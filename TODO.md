@@ -4,7 +4,7 @@
 
 ++ Add error code output for terminal use
 
-++ Change Code to use methods instead of if statements for determening if the user send a ssn or a help/version command
+++ Add Methods so that other programs can use this program to calculate age
 
 ++ ~~Add output for which generation the person belongs to~~ Done
 
