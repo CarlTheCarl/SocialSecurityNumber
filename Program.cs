@@ -7,9 +7,10 @@ namespace SocialSecurityNumber
 {
     class Program
     {
+
         static void Main(string[] args) // Varför är stringen arg?
         {
-            const string VERSION_NUMBER = "1.1 Socks with sandals";
+            const string VERSION_NUMBER = "1.1 Socks with sandals Bugfix 1";
             string socialSecurityNumber = null;
             string firstName = null;
             string lastName = null;
@@ -143,13 +144,14 @@ namespace SocialSecurityNumber
                     age--;
                 }
 
-                //if ((socialSecurityNumberLength == 11 ) // Temporarly removing this until I can get it fixed with the whole generation calculation thing, probably gonna rewrite this whole thing though.
+                //if ((socialSecurityNumberLength == 11 ) 
                 //    && socialSecurityNumber.Substring(socialSecurityNumberLength - 5, 1) == "+")
                 //{
                 //    age += 100;
-                //}
+                //} // Temporarly removing this until I can get it fixed with the whole generation calculation thing, probably gonna rewrite this whole thing though.
 
-            } else if ((socialSecurityNumberLength == 12
+            }
+            else if ((socialSecurityNumberLength == 12
                 || socialSecurityNumberLength == 13))
             {
                 birthDate = DateTime.ParseExact(socialSecurityNumber.Substring(0, 8), "yyyyMMdd", CultureInfo.InvariantCulture);
@@ -182,7 +184,7 @@ namespace SocialSecurityNumber
             {
                 generation = "Gen Z";
             }
-            else if (birthYear <= 1997 && birthYear >= 1981)
+            else if (birthYear <= 1996 && birthYear >= 1981)
             {
                 generation = "Millenial";
             }

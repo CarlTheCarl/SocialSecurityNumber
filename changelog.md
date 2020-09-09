@@ -1,3 +1,9 @@
+## 2020-09-09
+
+++ Version 1.1 Bugfix 1 release
+
+++ changed a year in the generation calculation
+
 ## 2020-09-03
 
 ++ Version 1.1 "Socks with sandals" release

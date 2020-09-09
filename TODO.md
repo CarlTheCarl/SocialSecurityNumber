@@ -6,6 +6,8 @@
 
 ++ Add Methods so that other programs can use this program to calculate age
 
+++ Add calculation to counter for DateTime shenanigans when using two digit year number
+
 ++ ~~Add output for which generation the person belongs to~~ Done
 
 ++ ~~Add input for first and last name~~ Done
