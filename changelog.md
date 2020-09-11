@@ -1,3 +1,13 @@
+## 2020-09-11
+
+++ Version 1.2  "Salt and Pepper" release
+
+++ Added methods for calculating the stuff
+
+++ Fixed Bug with DateTime conversion
+
+++ Re-added check for + instead of - for 10 number social security number
+
 ## 2020-09-09
 
 ++ Version 1.1 Bugfix 1 release
